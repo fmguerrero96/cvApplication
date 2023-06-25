@@ -4,7 +4,7 @@ export default function ViewExperience({experiences}) {
     return(
         <ul className="viewExperience">
             {experiences.map((exp) => (
-                <li className="experienceBlock">
+                <li key={exp.id} className="experienceBlock">
                     <div name='companyName' className="expItem companyName">Company: {exp.companyName}</div>
                     <div name='position' className="expIten position">Position: {exp.position}</div>
                     <div name='startDate' className="expIten startDate">From: {exp.startDate}</div>
