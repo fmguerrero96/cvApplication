@@ -33,7 +33,6 @@ function App() {
       [e.target.name]: e.target.value
      }
     })
-    console.log(e.target.value)
   }
 
   function onSubmitExperience(e) {
@@ -43,7 +42,6 @@ function App() {
       ...prevState,
       experienceList: updatedExperienceList,
     }));
-    console.log(updatedExperienceList);
   }
 
   function handleChange(e) {
