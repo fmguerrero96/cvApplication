@@ -43,6 +43,13 @@ function App() {
     setExperiences((prevState) => ({
       ...prevState,
       experienceList: updatedExperienceList,
+      workExp: {
+        companyName: '',
+        position: '',
+        startDate: '',
+        endDate: '',
+        id: uniqid(),
+      }
     }));
   }
 
