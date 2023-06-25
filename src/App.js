@@ -63,7 +63,7 @@ function App() {
   return (
     <div >
       <EditPersonal onEditInfo={handleChange}/>
-      <EditExperience onExperienceSubmit={onSubmitExperience} onExperienceChange={handleExpChange}/>
+      <EditExperience companyName={experiences.workExp.companyName} position={experiences.workExp.position} startDate={experiences.workExp.startDate} endDate={experiences.workExp.endDate} onExperienceSubmit={onSubmitExperience} onExperienceChange={handleExpChange}/>
       <ViewPersonal firstName={person.firstName} lastName={person.lastName} profession={person.profession} phoneNumber={person.phoneNumber} email={person.email}/>
       <ViewExperience experiences={experiences.experienceList}/>
     </div>
