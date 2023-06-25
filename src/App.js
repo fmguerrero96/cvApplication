@@ -4,6 +4,7 @@ import EditPersonal from "./components/editPersonal";
 import ViewPersonal from "./components/viewPersonal";
 import EditExperience from "./components/editExperience";
 import ViewExperience from "./components/viewExperience";
+import uniqid from "uniqid"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       position: '',
       startDate: '',
       endDate: '',
+      id: uniqid()
     },
     experienceList: [],
   })
