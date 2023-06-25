@@ -102,7 +102,7 @@ function App() {
     <div >
       <EditPersonal onEditInfo={handleChange}/>
       <EditExperience companyName={experiences.workExp.companyName} position={experiences.workExp.position} startDate={experiences.workExp.startDate} endDate={experiences.workExp.endDate} onExperienceSubmit={onSubmitExperience} onExperienceChange={handleExpChange}/>
-      <EditEducation onEducationChange={handleEduChange} onEducationSubmit={onSubmitEducation}/>
+      <EditEducation schoolName={educations.schoolInfo.firstName} degree={educations.schoolInfo.degree} startSchool={educations.schoolInfo.startSchool} endSchool={educations.schoolInfo.endSchool} onEducationChange={handleEduChange} onEducationSubmit={onSubmitEducation}/>
       <ViewPersonal firstName={person.firstName} lastName={person.lastName} profession={person.profession} phoneNumber={person.phoneNumber} email={person.email}/>
       <ViewExperience experiences={experiences.experienceList}/>
     </div>
