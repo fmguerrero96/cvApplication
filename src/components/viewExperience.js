@@ -3,14 +3,14 @@ import React from "react";
 export default function ViewExperience({experiences}) {
     return(
         <ul className="viewExperience">
-            {experiences.map((exp => {
+            {experiences.map((exp) => (
                 <li className="experienceBlock">
-                <div className="expItem companyName">{exp.workExp.companyName}</div>
-                <div className="expIten position">{exp.workExp.position}</div>
-                <div className="expIten startDate">{exp.workExp.startDate}</div>
-                <div className="expIten endDate">{exp.workExp.endDate}</div>
+                    <div name='companyName' className="expItem companyName">Company: {exp.companyName}</div>
+                    <div name='position' className="expIten position">Position: {exp.position}</div>
+                    <div name='startDate' className="expIten startDate">From: {exp.startDate}</div>
+                    <div name='endDate' className="expIten endDate">To: {exp.endDate}</div>
             </li>
-            }))}
+            ))}
         </ul>
     )
 }
