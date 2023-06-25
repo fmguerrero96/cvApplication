@@ -101,12 +101,18 @@ function App() {
 
   return (
     <div >
-      <EditPersonal onEditInfo={handleChange}/>
-      <EditExperience companyName={experiences.workExp.companyName} position={experiences.workExp.position} startDate={experiences.workExp.startDate} endDate={experiences.workExp.endDate} onExperienceSubmit={onSubmitExperience} onExperienceChange={handleExpChange}/>
-      <EditEducation schoolName={educations.schoolInfo.schoolName} degree={educations.schoolInfo.degree} startSchool={educations.schoolInfo.startSchool} endSchool={educations.schoolInfo.endSchool} onEducationChange={handleEduChange} onEducationSubmit={onSubmitEducation}/>
-      <ViewPersonal firstName={person.firstName} lastName={person.lastName} profession={person.profession} phoneNumber={person.phoneNumber} email={person.email}/>
-      <ViewExperience experiences={experiences.experienceList}/>
-      <ViewEducation educations={educations.educationList}/>
+      <div className="left">
+        <EditPersonal onEditInfo={handleChange}/>
+        <EditExperience companyName={experiences.workExp.companyName} position={experiences.workExp.position} startDate={experiences.workExp.startDate} endDate={experiences.workExp.endDate} onExperienceSubmit={onSubmitExperience} onExperienceChange={handleExpChange}/>
+        <EditEducation schoolName={educations.schoolInfo.schoolName} degree={educations.schoolInfo.degree} startSchool={educations.schoolInfo.startSchool} endSchool={educations.schoolInfo.endSchool} onEducationChange={handleEduChange} onEducationSubmit={onSubmitEducation}/>
+      </div>
+
+      <div className="right">
+        <ViewPersonal firstName={person.firstName} lastName={person.lastName} profession={person.profession} phoneNumber={person.phoneNumber} email={person.email}/>
+        <ViewExperience onDeleteExp={handleDeleteExp} experiences={experiences.experienceList}/>
+        <ViewEducation educations={educations.educationList}/>
+      </div>
+      
     </div>
   );
 }
