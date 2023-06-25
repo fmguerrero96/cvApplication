@@ -6,7 +6,7 @@ export default function EditEducation({onEducationSubmit, onEducationChange}) {
             <h2 className="PersonalTitile educationInfo">
                 Education
             </h2>
-            <form className="educationForm" onSubmit={onEducationSUbmit}>
+            <form className="educationForm" onSubmit={onEducationSubmit}>
             <input required value={schoolName} onChange={onEducationChange} name="schoolName" className="eduactionInput schoolName" type='text' placeholder="School Name"/>
             <input required value={degree} onChange={onEducationChange} name="degree" className="educationInput degree" type='text' placeholder="Degree"/>
             <label className="startSchool fromLabel"> From: 
