@@ -75,6 +75,22 @@ function App() {
     }));
   }
 
+  function onSubmitEducation(e) {
+    e.preventDefault()
+    const updatedEducationList = [...educations.educationList, experiences.schoolInfo]
+    setEducations((prevState) => ({
+      ...prevState,
+      educationList: updatedEducationList,
+      schoolInfo: {
+        schoolName: '',
+        degree: '',
+        startSchool: '',
+        endSchool: '',
+        id: uniqid(),
+      }
+    }))
+  }
+
   function handleChange(e) {
     setPerson({
       ...person,
@@ -86,7 +102,7 @@ function App() {
     <div >
       <EditPersonal onEditInfo={handleChange}/>
       <EditExperience companyName={experiences.workExp.companyName} position={experiences.workExp.position} startDate={experiences.workExp.startDate} endDate={experiences.workExp.endDate} onExperienceSubmit={onSubmitExperience} onExperienceChange={handleExpChange}/>
-      <EditEducation onEducationChange={handleEduChange}/>
+      <EditEducation onEducationChange={handleEduChange} onEducationSubmit={onSubmitEducation}/>
       <ViewPersonal firstName={person.firstName} lastName={person.lastName} profession={person.profession} phoneNumber={person.phoneNumber} email={person.email}/>
       <ViewExperience experiences={experiences.experienceList}/>
     </div>
