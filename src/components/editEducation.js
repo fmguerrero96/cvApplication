@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function EditEducation({onEducationSubmit, onEducationChange}) {
+export default function EditEducation({schoolName, degree, startSchool, endSchool, onEducationSubmit, onEducationChange}) {
     return(
         <div className="editEducationComponent">
             <h2 className="PersonalTitile educationInfo">
