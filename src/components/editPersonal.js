@@ -2,7 +2,7 @@ import React from "react";
 
 export default function EditPersonal({onEditInfo}) {
     return(
-        <div>
+        <div className="editPersonalComponent">
             <h2 className="PersonalTitle PersonalInfo">
                 Personal Information
             </h2>
