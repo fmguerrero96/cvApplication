@@ -92,6 +92,14 @@ function App() {
     }))
   }
 
+  function handleDeleteExp(expId) {
+    const newExperiences = experiences.experienceList.filter((exp) => exp.id !== expId);
+    setExperiences((prevState) => ({
+      ...prevState,
+      experienceList: newExperiences,
+    }));
+  }
+
   function handleChange(e) {
     setPerson({
       ...person,
