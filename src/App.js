@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import './/styles.css'
 import EditPersonal from "./components/editPersonal";
 import ViewPersonal from "./components/viewPersonal";
 import EditExperience from "./components/editExperience";
@@ -116,19 +117,21 @@ function App() {
   }
 
   return (
-    <div >
-      <div className="left">
-        <EditPersonal onEditInfo={handleChange}/>
-        <EditExperience companyName={experiences.workExp.companyName} position={experiences.workExp.position} startDate={experiences.workExp.startDate} endDate={experiences.workExp.endDate} onExperienceSubmit={onSubmitExperience} onExperienceChange={handleExpChange}/>
-        <EditEducation schoolName={educations.schoolInfo.schoolName} degree={educations.schoolInfo.degree} startSchool={educations.schoolInfo.startSchool} endSchool={educations.schoolInfo.endSchool} onEducationChange={handleEduChange} onEducationSubmit={onSubmitEducation}/>
-      </div>
+    <div className="mainContainer">
+      <div className="PageTitle">CV Generator</div>
+      <div className="left-right">
+        <div className="left">
+          <EditPersonal onEditInfo={handleChange}/>
+          <EditExperience companyName={experiences.workExp.companyName} position={experiences.workExp.position} startDate={experiences.workExp.startDate} endDate={experiences.workExp.endDate} onExperienceSubmit={onSubmitExperience} onExperienceChange={handleExpChange}/>
+          <EditEducation schoolName={educations.schoolInfo.schoolName} degree={educations.schoolInfo.degree} startSchool={educations.schoolInfo.startSchool} endSchool={educations.schoolInfo.endSchool} onEducationChange={handleEduChange} onEducationSubmit={onSubmitEducation}/>
+        </div>
 
-      <div className="right">
-        <ViewPersonal firstName={person.firstName} lastName={person.lastName} profession={person.profession} phoneNumber={person.phoneNumber} email={person.email}/>
-        <ViewExperience onDeleteExp={handleDeleteExp} experiences={experiences.experienceList}/>
-        <ViewEducation educations={educations.educationList} onDeleteEdu={handleDeleteEdu}/>
+        <div className="right">
+          <ViewPersonal firstName={person.firstName} lastName={person.lastName} profession={person.profession} phoneNumber={person.phoneNumber} email={person.email}/>
+          <ViewExperience onDeleteExp={handleDeleteExp} experiences={experiences.experienceList}/>
+          <ViewEducation educations={educations.educationList} onDeleteEdu={handleDeleteEdu}/>
+        </div>
       </div>
-      
     </div>
   );
 }
