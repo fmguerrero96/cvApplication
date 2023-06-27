@@ -100,6 +100,14 @@ function App() {
     }));
   }
 
+  function handleDeleteEdu(eduId) {
+    const newEducations = educations.educationList.filter((edu) => edu.id !== eduId);
+    setEducations((prevState) => ({
+      ...prevState,
+      educationList: newEducations
+    }))
+  }
+
   function handleChange(e) {
     setPerson({
       ...person,
@@ -118,7 +126,7 @@ function App() {
       <div className="right">
         <ViewPersonal firstName={person.firstName} lastName={person.lastName} profession={person.profession} phoneNumber={person.phoneNumber} email={person.email}/>
         <ViewExperience onDeleteExp={handleDeleteExp} experiences={experiences.experienceList}/>
-        <ViewEducation educations={educations.educationList}/>
+        <ViewEducation educations={educations.educationList} onDeleteEdu={handleDeleteEdu}/>
       </div>
       
     </div>
