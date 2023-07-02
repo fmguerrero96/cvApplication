@@ -63,3 +63,7 @@ label{
     margin: .25rem 0 .25rem 2rem;
     width: 90%;
 }
+
+.right, .left {
+    width: 50vw;
+}
