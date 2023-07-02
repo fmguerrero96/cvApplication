@@ -20,3 +20,7 @@ menu, nav {
     background-color: rgb(41, 139, 244);
     padding: 1rem 0 2rem 0;
 }
+
+.left-right {
+    display: flex;
+}
