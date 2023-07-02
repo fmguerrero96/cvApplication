@@ -24,3 +24,13 @@ menu, nav {
 .left-right {
     display: flex;
 }
+
+.editPersonalComponent, .editExperinceComponent,
+.editEducationComponent {
+    padding: 1rem;
+}
+
+.PersonalTitle {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
