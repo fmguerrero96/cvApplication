@@ -67,3 +67,13 @@ label{
 .right, .left {
     width: 50vw;
 }
+
+.addExperience, .addEducation {
+    font-size: 1.25rem;
+    padding: .5rem;
+    background-color: rgb(0, 77, 159);
+    border-radius: .5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
