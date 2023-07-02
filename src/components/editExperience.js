@@ -3,7 +3,7 @@ import React from "react";
 export default function EditExperience({companyName, position, startDate, endDate, onExperienceSubmit, onExperienceChange}) {
     return(
         <div className="editExperinceComponent">
-            <h2 className="PersonalTitile experienceInfo">
+            <h2 className="PersonalTitle experienceInfo">
                 Work Experience
             </h2>
             <form className="experienceForm" onSubmit={onExperienceSubmit}>
