@@ -93,3 +93,34 @@ label{
 .viewContanctInfo div {
     margin-bottom: .25rem;
 }
+
+.viewExperience {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid  rgb(0, 77, 159);
+    padding-bottom: 2rem;
+}
+
+.expTitle {
+    font-size: 1.75rem;
+}
+
+.experienceBlock {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+li button {
+    width: 20%;
+    background-color: white;
+    border: 1px solid rgb(252, 116, 116);
+    border-radius: .25rem;
+    cursor: pointer;
+    color: rgb(252, 116, 116);
+}
