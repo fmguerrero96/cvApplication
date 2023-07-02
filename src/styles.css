@@ -77,3 +77,19 @@ label{
     color: white;
     cursor: pointer;
 }
+
+.viewPersonal {
+    margin: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid  rgb(0, 77, 159);
+    padding-bottom: 1rem;
+}
+
+.viewFullName {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.viewContanctInfo div {
+    margin-bottom: .25rem;
+}
