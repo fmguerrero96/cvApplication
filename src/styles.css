@@ -31,12 +31,12 @@ menu, nav {
 }
 
 .PersonalTitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
     text-align: center;
 }
 
-.personalForm {
+.personalForm, .experienceForm {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -48,11 +48,17 @@ menu, nav {
     margin: 0 auto;
 }
 
-.personalInput {
+.personalInput, .companyName, .position {
     width: 75%;
     margin: .25rem;
     height: 2rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding-left: 1rem;
+    width: 90%;
+}
+
+label{
+    align-self:first baseline;
+    margin: .25rem 0 .25rem 2rem;
     width: 90%;
 }
