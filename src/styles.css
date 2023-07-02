@@ -36,7 +36,7 @@ menu, nav {
     text-align: center;
 }
 
-.personalForm, .experienceForm {
+.personalForm, .experienceForm, .educationForm {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -48,7 +48,8 @@ menu, nav {
     margin: 0 auto;
 }
 
-.personalInput, .companyName, .position {
+.personalInput, .companyName, .position,
+.schoolName, .degree {
     width: 75%;
     margin: .25rem;
     height: 2rem;
