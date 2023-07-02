@@ -33,6 +33,7 @@ menu, nav {
 .PersonalTitle {
     font-size: 1.5rem;
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 .personalForm {
@@ -44,6 +45,7 @@ menu, nav {
     border: 1px solid black;
     align-items: center;
     width: 90%;
+    margin: 0 auto;
 }
 
 .personalInput {
