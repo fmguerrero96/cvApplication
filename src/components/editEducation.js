@@ -12,7 +12,7 @@ export default function EditEducation({schoolName, degree, startSchool, endSchoo
             <label className="startSchool fromLabel"> From: 
                 <input required value={startSchool} onChange={onEducationChange} name="startSchool" className="educationInput startSchool" type='date'/>
             </label>
-            <label className="endSchool fromLabel"> From: 
+            <label className="endSchool fromLabel"> To: 
                 <input required value={endSchool} onChange={onEducationChange} name="endSchool" className="educationInput endSchool" type='date'/>
             </label>
             <button className="addEducation" type="submit" >Add to CV</button>
